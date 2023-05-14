@@ -40,6 +40,7 @@ export const authOptions = {
         signOut: "/auth/signout",
         error: "/auth/error",
     },
+    secret: process.env.JWT_SECRET,
 };
 
 export default NextAuth(authOptions);
