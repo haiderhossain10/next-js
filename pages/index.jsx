@@ -20,9 +20,9 @@ export default function Home() {
     return (
         <>
             <HomeHero />
-            <section className="py-[100px] bg-[#090625]">
+            <section className="py-[100px] bg-[#090625] relative">
                 <div className="container">
-                    <div className="lg:w-6/12 mx-auto">
+                    <div className="lg:w-6/12 mx-auto relative z-10">
                         <h2 className="text-5xl font-bold text-white text-center">
                             Our Technical
                             <span className="bg-gradient-to-r from-fuchsia-600 to-pink-600 text-transparent bg-clip-text inline-block ml-2">
@@ -86,6 +86,8 @@ export default function Home() {
                         </ul>
                     </div>
                 </div>
+                <div className="absolute top-0 left-0 h-[100px] w-[100px] bg-fuchsia-600 rounded-full blur-[6rem]"></div>
+                <div className="absolute bottom-0 right-0 h-[100px] w-[100px] bg-yellow-600 rounded-full blur-[6rem]"></div>
             </section>
         </>
     );
