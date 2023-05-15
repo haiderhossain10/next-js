@@ -30,7 +30,7 @@ export default function Home() {
                             </span>
                         </h2>
                     </div>
-                    <div className="lg:w-8/12 mx-auto">
+                    <div className="lg:w-8/12 mx-auto relative z-10">
                         <ul className="flex flex-wrap justify-center gap-10 mt-20">
                             <li>
                                 <AiFillHtml5 className="text-4xl text-white" />
