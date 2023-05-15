@@ -3,7 +3,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 export default function HomeHero() {
     return (
         <>
-            <section className="lg:h-screen 2xl:h-[900px] flex items-center justify-center">
+            <section className="h-screen 2xl:h-[900px] flex items-center justify-center">
                 <div className="container">
                     <div className="lg:w-7/12 mx-auto text-center">
                         <h2 className="lg:text-6xl text-5xl font-bold leading-normal  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
