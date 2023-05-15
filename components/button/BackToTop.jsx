@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
 import { HiOutlineArrowDown } from "react-icons/hi";
 
 export default function BackToTop() {
-    const [isScrolled, setScrolled] = useState(false);
-
     const topHandler = () => {
         window.scrollTo(0, 0);
     };

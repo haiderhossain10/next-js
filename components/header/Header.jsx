@@ -5,7 +5,7 @@ import { BiMessageDetail } from "react-icons/bi";
 export default function Header() {
     return (
         <>
-            <nav className="py-8">
+            <nav className="py-8 absolute left-0 right-0 top-0">
                 <div className="container">
                     <div className="flex items-center justify-between">
                         <div>
