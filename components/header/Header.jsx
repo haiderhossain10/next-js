@@ -1,22 +1,34 @@
 import navigation from "@/data/navigation";
+import useSticky from "@/hooks/useSticky";
+import Image from "next/image";
 import Link from "next/link";
 import { BiMessageDetail } from "react-icons/bi";
 
 export default function Header() {
+    const sticky = useSticky("200");
+
     return (
         <>
-            <nav className="py-8 absolute left-0 right-0 top-0">
+            <nav
+                className={`left-0 right-0 top-0 transition-all duration-150 z-50 ${
+                    sticky
+                        ? "fixed bg-[#090625] py-4 shadow-lg"
+                        : "absolute py-8"
+                }`}
+            >
                 <div className="container">
                     <div className="flex items-center justify-between">
                         <div>
                             <Link href="/">
-                                <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-                                    Haider.
-                                </h2>
+                                <Image
+                                    src="/assets/images/logo.png"
+                                    height={30}
+                                    width={30}
+                                />
                             </Link>
                         </div>
-                        <div className="lg:flex items-center gap-8">
-                            <ul className="hidden lg:flex items-center gap-8">
+                        <div className="hidden lg:flex items-center gap-8">
+                            <ul className="lg:flex items-center gap-8">
                                 {navigation?.map((nav) => (
                                     <li key={nav.id}>
                                         <Link
@@ -36,6 +48,11 @@ export default function Header() {
                                 </div>
                             </button>
                         </div>
+                        <button className="h-[18px] w-[24px] lg:hidden flex flex-col justify-between">
+                            <span className="h-[1px] w-full bg-white"></span>
+                            <span className="h-[1px] w-1/2 ml-auto bg-white"></span>
+                            <span className="h-[1px] w-full bg-white"></span>
+                        </button>
                     </div>
                 </div>
             </nav>
