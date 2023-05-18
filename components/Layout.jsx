@@ -1,4 +1,4 @@
-import BackToTop from "./button/BackToTop";
+import BackToTopButton from "./button/BackToTopButton";
 import Header from "./header/Header";
 
 export default function Layout({ children }) {
@@ -6,7 +6,7 @@ export default function Layout({ children }) {
         <>
             <Header />
             {children}
-            <BackToTop />
+            <BackToTopButton />
         </>
     );
 }

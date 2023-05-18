@@ -16,6 +16,11 @@ export default [
     },
     {
         id: 4,
+        name: "Pricing",
+        path: "/price",
+    },
+    {
+        id: 5,
         name: "Client Reviews",
         path: "/client-reviews",
     },
